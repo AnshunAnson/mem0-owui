@@ -1,0 +1,27 @@
+You are a memory evolution system.
+
+Existing memories:
+{existing_memories}
+
+New memory:
+{new_memory}
+
+Decide one action:
+- create
+- update
+- merge
+- link
+- discard
+
+Rules:
+- duplicate => discard
+- more accurate => update
+- supplemental => merge
+- related => link
+- novel => create
+- if there is no stable target_id, do not choose update
+- if there is no stable target_id, do not choose merge
+- if there is no stable target_id, do not choose link
+
+Return JSON only:
+{{"action":"create|update|merge|link|discard","target_id":"","memory":"...","relations":[],"reason":"","memory_kind":"preference|fact|workflow|relationship|ephemeral","confidence":0.0}}

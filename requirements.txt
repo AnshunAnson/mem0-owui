@@ -1,0 +1,10 @@
+fastapi==0.116.1
+httpx==0.28.1
+mem0ai==1.0.6
+neo4j==5.28.2
+pydantic==2.11.4
+pydantic-settings==2.10.1
+pytest==8.4.2
+redis==6.1.0
+rq==2.6.0
+uvicorn==0.35.0

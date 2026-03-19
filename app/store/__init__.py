@@ -1,0 +1,2 @@
+"""SQLite-backed event ledger."""
+
